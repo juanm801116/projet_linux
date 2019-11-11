@@ -1,0 +1,5 @@
+Ruta="ods/legacy/"
+Rutas="ods/deliver/"
+Archivo="ssci.txt"
+Archivos="jmlp_ssci.sort1"
+cat $Ruta$Archivo |  sort -t "|" -k 1 > $Rutas$Archivos
