@@ -1,0 +1,7 @@
+Ruta="ods/legacy/"
+Rutas="ods/deliver/"
+Archivo="ssci.txt"
+Archivos="jmlp_ssci.tnr2"
+Archivo1="jmlp_ssci.trn3"
+cat $Ruta$Archivo | awk -F"|" '{print $1 "*" $2 "*" $3 "*" $4 "*" $5}' > $Rutas$Archivos
+cat $Ruta$Archivo | awk -F"|" '{print $1 "*" $6 "*" $7 "*" $8 "*" $9 "*" $10}' > $Rutas$Archivo1
